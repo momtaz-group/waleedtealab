@@ -7,7 +7,6 @@ const quickLinks = [
   { href: "/", label: "الرئيسية" },
   { href: "/trips", label: "رحلاتنا المميزة" },
   { href: "/gallery", label: "معرض الصور" },
-  { href: "/#about", label: "من نحن" },
   { href: "/contact", label: "حجز رحلة" },
 ];
 
