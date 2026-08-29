@@ -1,18 +1,9 @@
 import Link from "next/link";
-import { UserCheck, HeartHandshake, Zap, Mountain, Tag, Camera, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import PlaceholderImage from "@/components/PlaceholderImage";
 import SectionHeading from "@/components/SectionHeading";
 import TripCard from "@/components/TripCard";
 import { trips, reviews, galleryItems } from "@/data/site";
-
-const whyUs = [
-  { icon: UserCheck, title: "مرشد على خبير", desc: "فريق مرشدين محليين خبراء بكل دروب وخبايا صحراء الفيوم." },
-  { icon: HeartHandshake, title: "رحلات آمنة", desc: "معدات أمان حديثة وسائقين محترفين لضمان راحتك التامة." },
-  { icon: Zap, title: "تنظيم سريع", desc: "حجز مرن وتنظيم سريع لرحلتك في نفس اليوم عند الطلب." },
-  { icon: Mountain, title: "مناظر صحراوية خلابة", desc: "مسارات مختارة بعناية لأجمل مناظر الكثبان والبحيرات." },
-  { icon: Tag, title: "أسعار مناسبة", desc: "باقات متنوعة تناسب كل الميزانيات والفئات بشفافية كاملة." },
-  { icon: Camera, title: "فرص تصوير احترافية", desc: "توقفات مخصصة عند أجمل الزوايا الذهبية لالتقاط الصور." },
-];
 
 export default function Home() {
   return (
@@ -38,48 +29,6 @@ export default function Home() {
             >
               احجز رحلتك الآن ←
             </Link>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="mx-auto max-w-6xl px-6 py-20">
-        <div className="grid items-center gap-10 md:grid-cols-2">
-          <PlaceholderImage theme="safari" className="h-80 w-full rounded-2xl md:order-1" />
-          <div className="md:order-2">
-            <h2 className="font-display text-3xl font-bold text-ink md:text-4xl">من نحن</h2>
-            <span className="mt-3 block h-1 w-16 rounded-full bg-accent" />
-            <p className="mt-5 leading-8 text-ink-soft">
-              مرحباً بكم مع وليد تعيلب، مرشدكم المحلي وخبير المغامرات في واحة الفيوم منذ أكثر من عشر سنوات.
-              حرصنا أن نقدم لكم أفضل تجارب المغامرات في واحة الفيوم وسيناء، فانضمو إلى رحلة تجمع بين
-              المغامرة الأصيلة وأعلى معايير الأمان والراحة والضيافة المصرية الأصيلة.
-            </p>
-            <div className="mt-8 flex gap-10">
-              <div>
-                <span className="font-display text-3xl font-bold text-accent-dark">+١٬٥٠٠</span>
-                <p className="mt-1 text-sm text-ink-soft">عميل سعيد</p>
-              </div>
-              <div>
-                <span className="font-display text-3xl font-bold text-accent-dark">+١٠</span>
-                <p className="mt-1 text-sm text-ink-soft">سنوات خبرة</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-sand-dark/60 py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <SectionHeading title="لماذا تخترنا" subtitle="نمنح رحلة سفاري حقيقية من الفخر والدهشة والمصداقية والجمال" />
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {whyUs.map((item) => (
-              <div key={item.title} className="rounded-2xl border border-black/5 bg-white p-6 shadow-sm">
-                <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15 text-accent-dark">
-                  <item.icon size={20} />
-                </span>
-                <h3 className="font-bold text-ink">{item.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-ink-soft">{item.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
